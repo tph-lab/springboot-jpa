@@ -1,0 +1,25 @@
+server:
+  port: 8081
+  servlet.contextpath: /webres
+
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.117.131:3306/res?serverTimezone=GMT%2B8
+    username: root
+    password: root
+
+
+#sql语句日志打印
+  jpa:
+    show-sql: true
+    database: mysql
+    properties:
+      hibernate:
+        format-sql: true
+
+
+#开启swagger
+swagger:
+  enabled: true
